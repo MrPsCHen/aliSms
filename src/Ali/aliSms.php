@@ -7,6 +7,9 @@ use function Couchbase\defaultDecoder;
 
 class aliSms
 {
+    /**
+     * 阿里云一定要使用UTC时间
+     */
     const METHOD_GET    = 'GET';
     const METHOD_POST   = 'POST';
 
@@ -58,6 +61,7 @@ class aliSms
 
 
     public function send($phone,$param,$code,$autograph){
+
         $this->PhoneNumbers = $phone;
         $this->TemplateCode = $code;
         $this->TemplateParam= json_encode(["code"=>"$param"]);
