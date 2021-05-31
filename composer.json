@@ -2,6 +2,7 @@
     "name": "doit/aliysms",
     "type": "library",
     "description": "the my first package",
+	"license": "MIT",
     "authors": [
         {
             "name": "cps",
