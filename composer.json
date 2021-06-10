@@ -11,7 +11,8 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "anlutro/curl": "^1.4"
+        "anlutro/curl": "^1.4",
+      "ext-json": "*"
     },
     "autoload": {
         "psr-4": {

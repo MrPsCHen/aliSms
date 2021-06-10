@@ -71,7 +71,7 @@ class aliSms
 
 
 
-        print_r($back->body);
+        return $back->body;
 
 
     }
@@ -193,7 +193,6 @@ class aliSms
             'TemplateParam'     => $this->TemplateParam,
             'SignName'          => $this->SignName,
         ];
-        print_r($this->param);
         ksort($this->param);
         $queryStr   = '';
         foreach ($this->param as $key =>$val){
